@@ -1,0 +1,5 @@
+public String format(Date date){
+ rank2fixstart   Calendar c=new GregorianCalendar(mTimeZone); rank2fixend 
+  c.setTime(date);
+  return applyRules(c,new StringBuffer(mMaxLengthEstimate)).toString();
+}

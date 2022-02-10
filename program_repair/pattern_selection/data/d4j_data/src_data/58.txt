@@ -1,0 +1,13 @@
+public Vector2D intersection(final SubLine subLine,final boolean includeEndPoints){
+  Line line1=(Line)getHyperplane();
+  Line line2=(Line)subLine.getHyperplane();
+  Vector2D v2D=line1.intersection(line2);
+ rank2fixstart   Location loc1=getRemainingRegion().checkPoint(line1.toSubSpace(v2D)); rank2fixend 
+  Location loc2=subLine.getRemainingRegion().checkPoint(line2.toSubSpace(v2D));
+  if (includeEndPoints) {
+    return ((loc1 != Location.OUTSIDE) && (loc2 != Location.OUTSIDE)) ? v2D : null;
+  }
+ else {
+    return ((loc1 == Location.INSIDE) && (loc2 == Location.INSIDE)) ? v2D : null;
+  }
+}

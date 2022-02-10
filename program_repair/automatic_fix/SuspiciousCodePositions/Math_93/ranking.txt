@@ -1,0 +1,11 @@
+org.apache.commons.math.util.MathUtils@350
+org.apache.commons.math.util.MathUtils@345
+org.apache.commons.math.util.MathUtils@346
+org.apache.commons.math.util.MathUtils@399
+org.apache.commons.math.util.MathUtils@397
+org.apache.commons.math.util.MathUtils@374
+org.apache.commons.math.util.MathUtils@377
+org.apache.commons.math.util.MathUtils@394
+org.apache.commons.math.util.MathUtils@398
+org.apache.commons.math.util.MathUtils@401
+org.apache.commons.math.util.MathUtils@316

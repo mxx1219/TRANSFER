@@ -1,0 +1,3 @@
+private boolean toStringEquals(Matcher m,Object arg){
+ rank2fixstart   return StringDescription.toString(m).equals(arg.toString()); rank2fixend 
+}

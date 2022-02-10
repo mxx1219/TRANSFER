@@ -1,0 +1,7 @@
+@Override public double getLInfNorm(){
+  double max=0;
+  for (  double a : data) {
+ rank2fixstart     max+=Math.max(max,Math.abs(a)); rank2fixend 
+  }
+  return max;
+}

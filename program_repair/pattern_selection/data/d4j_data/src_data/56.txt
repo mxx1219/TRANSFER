@@ -1,0 +1,4 @@
+public ElitisticListPopulation(final int populationLimit,final double elitismRate){
+  super(populationLimit);
+ rank2fixstart   this.elitismRate=elitismRate; rank2fixend 
+}

@@ -1,0 +1,17 @@
+public double[] operate(double[] v) throws IllegalArgumentException {
+  final int nRows=this.getRowDimension();
+  final int nCols=this.getColumnDimension();
+  if (v.length != nCols) {
+    throw new IllegalArgumentException("vector has wrong length");
+  }
+ rank2fixstart   final double[] out=new double[v.length]; rank2fixend 
+  for (int row=0; row < nRows; row++) {
+    final double[] dataRow=data[row];
+    double sum=0;
+    for (int i=0; i < nCols; i++) {
+      sum+=dataRow[i] * v[i];
+    }
+    out[row]=sum;
+  }
+  return out;
+}

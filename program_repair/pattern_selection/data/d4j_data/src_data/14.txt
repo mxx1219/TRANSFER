@@ -1,0 +1,3 @@
+public Week(Date time,TimeZone zone){
+ rank2fixstart   this(time,RegularTimePeriod.DEFAULT_TIME_ZONE,Locale.getDefault()); rank2fixend 
+}

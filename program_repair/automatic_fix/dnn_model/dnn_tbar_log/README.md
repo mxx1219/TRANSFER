@@ -1,0 +1,1 @@
+This directory contains logs for repair process.

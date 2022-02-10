@@ -1,0 +1,3 @@
+public int getDomainAxisIndex(CategoryAxis axis){
+ rank2fixstart   return this.domainAxes.indexOf(axis); rank2fixend 
+}

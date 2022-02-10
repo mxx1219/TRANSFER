@@ -1,0 +1,11 @@
+public int getRangeAxisIndex(ValueAxis axis){
+ rank2fixstart   int result=this.rangeAxes.indexOf(axis); rank2fixend 
+  if (result < 0) {
+    Plot parent=getParent();
+    if (parent instanceof CategoryPlot) {
+      CategoryPlot p=(CategoryPlot)parent;
+      result=p.getRangeAxisIndex(axis);
+    }
+  }
+  return result;
+}

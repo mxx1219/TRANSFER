@@ -1,0 +1,8 @@
+static boolean mayBeString(Node n,boolean recurse){
+  if (recurse) {
+ rank2fixstart     return allResultsMatch(n,MAY_BE_STRING_PREDICATE); rank2fixend 
+  }
+ else {
+    return mayBeStringHelper(n);
+  }
+}

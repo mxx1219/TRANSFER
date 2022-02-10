@@ -1,0 +1,3 @@
+public double solve(final UnivariateRealFunction f,double min,double max,double initial) throws MaxIterationsExceededException, FunctionEvaluationException {
+ rank2fixstart   return solve(min,max); rank2fixend 
+}

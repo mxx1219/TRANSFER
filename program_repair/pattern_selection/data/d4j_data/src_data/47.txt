@@ -1,0 +1,13 @@
+static int reduceAndCorrect(Calendar start,Calendar end,int field,int difference){
+  end.add(field,-1 * difference);
+  int endValue=end.get(field);
+  int startValue=start.get(field);
+  if (endValue < startValue) {
+    int newdiff=startValue - endValue;
+    rank2fixstart  end.add(field,newdiff);  rank2fixend  
+    return newdiff;
+  }
+ else {
+    return 0;
+  }
+}

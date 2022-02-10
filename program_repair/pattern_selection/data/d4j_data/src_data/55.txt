@@ -1,0 +1,4 @@
+public ElitisticListPopulation(final List<Chromosome> chromosomes,final int populationLimit,final double elitismRate){
+  super(chromosomes,populationLimit);
+ rank2fixstart   this.elitismRate=elitismRate; rank2fixend 
+}

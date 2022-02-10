@@ -1,0 +1,11 @@
+static {
+  primitiveValues.put(boolean.class, false);
+  primitiveValues.put(char.class, '\u0000');
+  primitiveValues.put(byte.class, (byte) 0);
+  primitiveValues.put(short.class, (short) 0);
+  primitiveValues.put(int.class, 0);
+  primitiveValues.put(long.class, 0L);
+  primitiveValues.put(float.class, 0F);
+  rank2fixstart  primitiveValues.put(double.class, 0);  rank2fixend  
+}
+

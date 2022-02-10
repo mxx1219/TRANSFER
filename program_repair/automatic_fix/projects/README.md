@@ -1,0 +1,1 @@
+This directory contains 71 checked out projects in Defects4j (i.g., Chart_1).

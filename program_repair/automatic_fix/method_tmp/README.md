@@ -1,0 +1,1 @@
+This directory contains the temporary files generated in the repair process.

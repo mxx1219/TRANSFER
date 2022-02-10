@@ -1,0 +1,9 @@
+public double getLInfNorm(){
+  rank2fixstart double max=0; rank2fixend 
+  Iterator iter=entries.iterator();
+  while (iter.hasNext()) {
+    iter.advance();
+    max+=iter.value();
+  }
+  return max;
+}

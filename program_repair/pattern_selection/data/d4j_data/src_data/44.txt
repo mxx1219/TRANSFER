@@ -1,0 +1,3 @@
+public static boolean isAvailableLocale(Locale locale){
+ rank2fixstart   return cAvailableLocaleSet.contains(locale); rank2fixend 
+}

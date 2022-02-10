@@ -1,0 +1,4 @@
+public ValueMarker(double value,Paint paint,Stroke stroke,Paint outlinePaint,Stroke outlineStroke,float alpha){
+ rank2fixstart   super(paint,stroke,paint,stroke,alpha); rank2fixend 
+  this.value=value;
+}

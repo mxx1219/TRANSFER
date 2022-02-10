@@ -1,0 +1,4 @@
+public double[] fit(){
+  final double[] guess=(new ParameterGuesser(getObservations())).guess();
+ rank2fixstart   return fit(new Gaussian.Parametric(),guess); rank2fixend 
+}

@@ -1,0 +1,7 @@
+public void describeTo(Description description){
+  description.appendText("same(");
+  appendQuoting(description);
+ rank2fixstart   description.appendText(wanted.toString()); rank2fixend 
+  appendQuoting(description);
+  description.appendText(")");
+}

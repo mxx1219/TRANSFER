@@ -78,7 +78,7 @@ VI. Reproduce All Experiments from Scratch
         * Run the same command as in Section V(2).
 
 VII. Experiments on Defects4J-v2.0.0
-
+--------------------------
 we have conducted a preliminary experiment on a recent benchmark Defects4J-v2.0.0. The results show similar trend as that on Defects4J-v1.2.0 and confirm the effectiveness of the proposed approach. Since some bugs in Defects4J-v2.0.0 cannot be checked out (e.g. https://github.com/rjust/defects4j/issues/353) and reproduced (also mentioned in Grace(Lou et al. FSE’21)), we finally use 226 bugs that can be reproduced on our machine for the experiment. The details of bug versions can be seen in d4j_v2_versions.txt in the root directory.
 
 
@@ -99,16 +99,13 @@ we have conducted a preliminary experiment on a recent benchmark Defects4J-v2.0.
 TBar can fix 4 bugs: Cli_5, Compress_24, Csv_9, JxPath_6
 TRANSFER-PR can fix 6 bugs: Cli_5, Compress_19, Compress_24, Compress_27, Csv_9, JxPath_6
 
-In our future work, we will conduct more comprehensive experiments to further evaluate the generality 
-of our methods on more defect benchmarks.
-
 
 VIII. Structure of the Directories
  -------------------------------
  ```powershell
   |--- README.md                :  user guidance
   |--- overview.png             :  overview of TRANSFER
-  |--- d4j_v2_versions.txt      :  used versions in Defects4J-v2.0.0
+  |--- d4j_v2_versions.txt      :  Defects4J-v2.0.0 versions
   |--- fault_localization       :  implementation of TRANSFER-FL
   |------ binary_classification :  implementation of BiLSTM-based binary classifier
   |------ ranking_task          :  implementation of MLP-based ranking model

@@ -1,3 +1,5 @@
+I. Defects4J-V2.0.0 Bug Versions Used in Our Experiments:
+
 Since some bugs in Defects4J-v2.0.0 cannot be checked out (e.g. https://github.com/rjust/defects4j/issues/353) and reproduced (also mentioned in Grace(Lou et al. FSE’21)), we finally use 226 bugs that can be reproduced on our machine for the experiment. 
 
 Csv: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16
@@ -11,3 +13,32 @@ JacksonXml: 1, 2, 3, 4, 5, 6
 Cli: 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40
 Compress: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30, 33, 40, 44
 JxPath: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+
+
+II. Fault Localization Experimental Result on Defects4J-V2.0.0:
+
+		Top-1	Top-3	Top-5	MFR	MAR
+-----------------------------------------------------------------------
+Ochiai		24	43	55	104.74	132.25
+-----------------------------------------------------------------------
+Tarantula		23	41	53	107.9	135.62
+-----------------------------------------------------------------------
+Dstar		24	43	55	105.08	133.39
+-----------------------------------------------------------------------
+Metallaxis		8	18	28	342.99	415.71
+-----------------------------------------------------------------------
+DeepFL		38	68	91	83.42	115.39
+-----------------------------------------------------------------------
+TRANSFER-FL	46	80	102	74.86	106.72
+
+
+III. Program Repair Experimental Result on Defects4J-V2.0.0:
+
+TBar can fix 4 bugs: Cli_5, Compress_24, Csv_9, JxPath_6
+TRANSFER-PR can fix 6 bugs: Cli_5, Compress_19, Compress_24, Compress_27, Csv_9, JxPath_6
+
+
+In our future work, we will conduct more comprehensive experiments to further evaluate the generality of our methods on more defect benchmarks.
+
+
+

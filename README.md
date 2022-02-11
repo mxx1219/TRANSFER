@@ -77,12 +77,38 @@ VI. Reproduce All Experiments from Scratch
         * Use the new generated suspicious files in Section VI(1) to program repair task. Specifically, to enter `./program_repair/automatic_fix/script/` and run `python get_sus_file.py`.
         * Run the same command as in Section V(2).
 
+VII. Experiments on Defects4J-v2.0.0
 
-VII. Structure of the Directories
+we have conducted a preliminary experiment on a recent benchmark Defects4J-v2.0.0. The results show similar trend as that on Defects4J-v1.2.0 and confirm the effectiveness of the proposed approach. Since some bugs in Defects4J-v2.0.0 cannot be checked out (e.g. https://github.com/rjust/defects4j/issues/353) and reproduced (also mentioned in Grace(Lou et al. FSE’21)), we finally use 226 bugs that can be reproduced on our machine for the experiment. The details of bug versions can be seen in d4j_v2_versions.txt in the root directory.
+
+
+### Fault Localization Experimental Results:
+
+| Techniques | Top-1 | Top-3 | Top-5 | MFR | MAR |
+|:------------|:----------:|:---------------:|----------|---------|:------:|
+| Ochiai|24 | 43 | 55 | 104.74 | 132.25 |
+| Tarantula | 23 | 41 | 53 | 107.9 | 135.62 |
+| Dstar | 24 | 43 | 55 | 105.08 | 133.39 |
+| Metallaxis | 8 | 18 | 28 | 342.99 | 415.71 |
+| DeepFL |38 | 68 | 91| 83.42 | 115.39 |
+| TRANSFER-FL |46 |80 | 102 |74.86 |106.72 |
+
+
+### Program Repair Experimental Results:
+
+TBar can fix 4 bugs: Cli_5, Compress_24, Csv_9, JxPath_6
+TRANSFER-PR can fix 6 bugs: Cli_5, Compress_19, Compress_24, Compress_27, Csv_9, JxPath_6
+
+In our future work, we will conduct more comprehensive experiments to further evaluate the generality 
+of our methods on more defect benchmarks.
+
+
+VIII. Structure of the Directories
  -------------------------------
  ```powershell
   |--- README.md                :  user guidance
   |--- overview.png             :  overview of TRANSFER
+  |--- d4j_v2_versions.txt      :  used versions in Defects4J-v2.0.0
   |--- fault_localization       :  implementation of TRANSFER-FL
   |------ binary_classification :  implementation of BiLSTM-based binary classifier
   |------ ranking_task          :  implementation of MLP-based ranking model

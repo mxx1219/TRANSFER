@@ -23,7 +23,7 @@ III. Download Dataset
 ---------------------------
 1. Click the following url link and download the necessary dataset used in this research.
 
-    [data_for_transfer.zip](https://mega.nz/file/u0wQzRga#Q2BHCuRD2aW_61vshVbcxj-ObYh2cyGhqOAmAXNn-T0)
+    [data_for_transfer.zip](https://drive.google.com/drive/folders/1zDwrNvlsr29bUCUgKg_7r59Ju7AYHCjm)
 
 2. Unzip it and put the extracted datasets in the corresponding path: 
     * Put `dataset_fl.pkl` into `./fault_localization/`
